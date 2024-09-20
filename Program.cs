@@ -16,10 +16,24 @@ namespace terulet
             int b;
             int T;
 
-            a = int.Parse(Console.ReadLine()); 
-            b = int.Parse(Console.ReadLine());
+            do
+            {
+                Console.Write("Kérem 'a' oldal értékét (0> kell lennie): ");
+                a = int.Parse(Console.ReadLine());
+            } while (a <= 0);
+
+
+            do
+            {
+                Console.Write("Kérem 'b' oldal értékét (0> kell lennie): ");
+                b = int.Parse(Console.ReadLine());
+            } while (b <= 0);
+
             T = a * b;
 
+            Console.WriteLine("A téglalap területe: {0}",T);
+
+            Console.ReadKey();
 
         }
         static void Main(string[] args)
