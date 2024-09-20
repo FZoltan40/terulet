@@ -10,7 +10,17 @@ namespace terulet
     {
         static void terulet()
         {
-            Console.WriteLine("Hello world");
+            Console.WriteLine("Téglalap területének számítása.");
+
+            int a;
+            int b;
+            int T;
+
+            a = int.Parse(Console.ReadLine()); 
+            b = int.Parse(Console.ReadLine());
+            T = a * b;
+
+
         }
         static void Main(string[] args)
         {
